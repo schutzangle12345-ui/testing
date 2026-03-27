@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Our AI Strategy Experts | testing</title>
+    <meta name="description" content="Connect with testing to define your enterprise AI roadmap, prioritize use cases, and link AI initiatives to your P&L.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+        :root {
+            --color-primary: #3D5AFE;
+            --color-primary-dark: #2A3EB1;
+            --color-background: #050505;
+            --color-surface: #121214;
+            --color-text: #FFFFFF;
+            --color-text-muted: #8E8E93;
+            --color-border: #2C2C2E;
+            --color-accent: #00E676;
+            --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --radius-pill: 9999px;
+            --radius-large: 32px;
+            --section-padding: 100px 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 40px;
+            background: var(--color-background);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: var(--radius-pill);
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-dark);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: var(--section-padding);
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            max-width: 1300px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 8vw, 5.5rem);
+            font-weight: 800;
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+            margin-bottom: 24px;
+        }
+
+        .hero-sub {
+            font-size: 1.25rem;
+            color: var(--color-text-muted);
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+        /* Contact Grid */
+        .contact-layout {
+            padding: var(--section-padding);
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 32px;
+            line-height: 1.1;
+        }
+
+        .info-card {
+            background: var(--color-surface);
+            padding: 40px;
+            border-radius: var(--radius-large);
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+
+        .info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: var(--color-accent);
+        }
+
+        .info-card p {
+            color: var(--color-text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* Form Styling */
+        .form-container {
+            background: var(--color-surface);
+            padding: 60px;
+            border-radius: var(--radius-large);
+            border: 1px solid var(--color-border);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-text-muted);
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 16px 20px;
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            color: var(--color-text);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Feature Highlights */
+        .strategy-pillars {
+            padding: var(--section-padding);
+            background: var(--color-surface);
+        }
+
+        .pillars-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .pillar-card {
+            padding: 40px;
+            border-radius: var(--radius-large);
+            background: var(--color-background);
+            border: 1px solid var(--color-border);
+        }
+
+        .pillar-card .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--color-primary);
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: var(--radius-pill);
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 40px;
+            border-top: 1px solid var(--color-border);
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 24px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--color-text-muted);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-surface);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--color-border);
+        }
+
+        .copyright {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-sub { margin: 0 auto 40px; }
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            h1 { font-size: 3.5rem; }
+            .form-container { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><span style="font-weight:700;font-size:1.25rem">testing</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="auth.html">Sign In</a>
+            <a href="contact.html" class="btn btn-primary" data-track="cta_click">Book Strategy Call</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Stop Pilots.<br>Start Strategy.</h1>
+            <p class="hero-sub">Tired of AI visions that don't hit the P&L? We help CTOs and Chief AI Officers build 90-day roadmaps that secure board-level buy-in.</p>
+            <div style="display: flex; gap: 16px;">
+                <a href="#contact-form" class="btn btn-primary" data-track="cta_click">Secure Your AI Roadmap</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-large); height: 400px; display: flex; align-items: center; justify-content: center;">
+                <div style="text-align: center;">
+                    <div style="font-size: 4rem; font-weight: 800; color: var(--color-accent);">+22%</div>
+                    <div style="color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem;">Target Margin Impact</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-layout">
+        <div class="contact-info">
+            <h2>Let’s Bridge the Gap Between AI Tech and ROI.</h2>
+            <p style="font-size: 1.25rem; color: var(--color-text-muted); margin-bottom: 40px;">
+                Most enterprises are stuck in "pilot purgatory." We provide the structured criteria to decide whether to build, buy, or partner—and how to tie it all to business outcomes.
+            </p>
+            
+            <div class="info-card">
+                <h3>Strategy for Leaders</h3>
+                <p>Tailored frameworks for CTOs, CAIOs, and CFOs looking to unify fragmented AI projects into a cohesive portfolio.</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>90-Day Execution</h3>
+                <p>We don't do 12-month research phases. We deliver high-impact use cases that show value in the first quarter.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Risk & Governance</h3>
+                <p>Align your transformation with 2025–2028 regulatory trends and security controls from day one.</p>
+            </div>
+        </div>
+
+        <div class="form-container" id="contact-form">
+            <form data-backend="form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Work Email</label>
+                    <input type="email" name="email" placeholder="executive@company.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Your Role</label>
+                    <select name="role" required>
+                        <option value="">Select your title</option>
+                        <option value="CTO">CTO</option>
+                        <option value="CAIO">Chief AI Officer</option>
+                        <option value="C-Suite">Other C-Suite / Executive</option>
+                        <option value="VP">VP / Director of Strategy</option>
+                        <option value="Board">Board Member</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Primary AI Hurdle</label>
+                    <select name="challenge" required>
+                        <option value="">What is your biggest blocker?</option>
+                        <option value="ROI">Lack of clear ROI / KPI links</option>
+                        <option value="Silos">Siloed internal pilots</option>
+                        <option value="Selection">Build vs Buy missteps</option>
+                        <option value="Compliance">Governance & Risk concerns</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Project Details</label>
+                    <textarea name="message" placeholder="Briefly describe your current AI landscape..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-track="cta_click">Request Strategy Consultation</button>
+                <p data-success style="display:none; color: var(--color-accent); font-weight: bold; margin-top: 1.5rem; text-align: center;">
+                    Success! Our strategy team will be in touch within 24 hours.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <section class="strategy-pillars">
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <span class="tag">Industry Focus</span>
+                <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Banking & Finance</h4>
+                <p style="color: var(--color-text-muted);">Impact use cases for working capital, margin expansion, and automated compliance frameworks.</p>
+            </div>
+            <div class="pillar-card">
+                <span class="tag">Industry Focus</span>
+                <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Manufacturing</h4>
+                <p style="color: var(--color-text-muted);">Tying AI to supply chain efficiency and predictive maintenance with clear P&L attribution.</p>
+            </div>
+            <div class="pillar-card">
+                <span class="tag">Industry Focus</span>
+                <h4 style="font-size: 1.5rem; margin-bottom: 15px;">Healthcare & Pharma</h4>
+                <p style="color: var(--color-text-muted);">Navigating complex regulatory landscapes while accelerating clinical R&D through structured AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span style="font-weight:700;font-size:1.5rem">testing</span>
+                <p style="color: var(--color-text-muted); margin-top: 20px;">
+                    The premium strategy partner for enterprise AI transformation. Moving executives from skepticism to scaled impact.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" class="social-icon"><svg width="20" height="20" fill="white" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Capabilities</h4>
+                <ul>
+                    <li><a href="#">AI Roadmaps</a></li>
+                    <li><a href="#">Build vs Buy Analysis</a></li>
+                    <li><a href="#">P&L ROI Modeling</a></li>
+                    <li><a href="#">AI Risk Governance</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="auth.html">Executive Portal</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Security Controls</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 testing. All rights reserved. Enterprise AI Strategy Consulting.
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+      var BACKEND = 'http://localhost:3000/api';
+      var TOKEN = 'e767f100301fec67fc23ca5906fe13f54b6e198a82c84bfadd71565e031da023';
+      var DOMAIN = 'enterpriseaistrategy.com';
+      var HEADERS = { 'Content-Type': 'application/json', 'X-Token': TOKEN, 'X-Domain': DOMAIN };
+
+      // 1. Auto-track pageview
+      fetch(BACKEND + '/track', {
+        method: 'POST',
+        headers: HEADERS,
+        body: JSON.stringify({ event: 'pageview', path: window.location.pathname })
+      }).catch(function(){});
+
+      // 2. Track CTA clicks
+      document.addEventListener('click', function(e) {
+        var el = e.target.closest('[data-track]');
+        if (el) {
+          fetch(BACKEND + '/track', {
+            method: 'POST',
+            headers: HEADERS,
+            body: JSON.stringify({ event: el.getAttribute('data-track'), path: window.location.pathname })
+          }).catch(function(){});
+        }
+      });
+
+      var FORM_ID = '99';
+
+      // 3. Handle forms (Contact, Signup, Waitlist)
+      document.addEventListener('submit', function(e) {
+        var form = e.target.closest('form[data-backend]');
+        if (!form) return;
+        e.preventDefault();
+        var type = form.getAttribute('data-backend');
+        var endpoint = type === 'signup' ? '/users' : '/forms/submit';
+        
+        // Extract dynamic form fields
+        var data = {};
+        new FormData(form).forEach(function(v, k) { data[k] = v; });
+        
+        // Add Form ID if it's a general form and we have it
+        if (type === 'form' && FORM_ID) {
+          data.formId = FORM_ID;
+        }
+
+        var btn = form.querySelector('button[type="submit"]');
+        var originalText = '';
+        if (btn) {
+          originalText = btn.innerText;
+          btn.innerText = 'Sending...';
+          btn.disabled = true;
+        }
+
+        // Track Form Submission Event
+        fetch(BACKEND + '/track', {
+          method: 'POST',
+          headers: HEADERS,
+          body: JSON.stringify({ 
+            event: 'form_submission', 
+            path: window.location.pathname,
+            metadata: { formType: type } 
+          })
+        }).catch(function(){});
+
+        // Submit Form Data
+        fetch(BACKEND + endpoint, {
+          method: 'POST',
+          headers: HEADERS,
+          body: JSON.stringify(data)
+        }).then(function(r) { return r.json(); }).then(function(res) {
+          if (res.success) {
+            var msg = form.querySelector('[data-success]');
+            if (msg) { msg.style.display = 'block'; }
+            form.reset();
+            if (btn) btn.style.display = 'none';
+          } else {
+            alert(res.error || 'Failed to submit form');
+            if (btn) { btn.innerText = originalText; btn.disabled = false; }
+          }
+        }).catch(function(){
+          alert('Network error occurred');
+          if (btn) { btn.innerText = originalText; btn.disabled = false; }
+        });
+      });
+    })();
+    </script>
+</body>
+</html>
